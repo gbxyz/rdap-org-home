@@ -37,6 +37,10 @@ stylesheets:
 
 <pre style="margin-left:2em">$ curl -Ls https://rdap.org/domain/example.com | jq .</pre>
 
+<p>Example using <a target="_new" href="https://microsoft.com/PowerShell/"><tt>PowerShell</tt></a>:</p>
+
+<pre style="margin-left:2em">&gt; Invoke-WebRequest -Uri "https://rdap.org/domain/example.com" | ConvertFrom-Json | ConvertTo-Json</pre>
+
 <h3>HTTP Status Codes</h3>
 <ul>
   <li><tt>302</tt> – occurs when RDAP.org knows of an RDAP service which is authoritative for the requested resource. Follow the URL listed in the <tt>Location</tt> header.</li>
